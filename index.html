@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portafolio académico y cuaderno de aprendizaje de Katy.">
+  <title>Katy | Portafolio académico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="navbar">
+    <a href="#inicio" class="logo" aria-label="Ir al inicio">Katy<span>.</span></a>
+    <button id="burger" class="icon-btn burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">☰</button>
+    <nav id="menu" class="menu" aria-label="Navegación principal">
+      <a href="#inicio" class="active">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#cuaderno">Cuaderno</a>
+      <a href="#reflexion">Reflexión</a>
+      <a href="#bibliografia">Bibliografía</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Cambiar a tema oscuro" title="Cambiar tema">🌙</button>
+      <a href="docs/CV-Katy.pdf" class="btn btn-ghost btn-sm" download>Descargar CV</a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="section hero page active">
+      <div class="hero-text reveal">
+        <span class="tag">Mi portafolio de aprendizaje</span>
+        <p class="eyebrow">¡Hola! Bienvenido/a a mi espacio digital</p>
+        <h1>Soy <span class="accent">Katy</span><br>Estudiante de<br><span class="accent typing-wrap"><span id="typing">Ingeniería de Sistemas</span><span class="cursor" aria-hidden="true">|</span></span></h1>
+        <p>Estudio Ingeniería de Sistemas en la Universidad Nacional del Centro del Perú. Este espacio reúne mi presentación, proyectos académicos y evidencias del aprendizaje desarrollado durante el curso.</p>
+        <div class="hero-buttons">
+          <a href="#sobre-mi" class="btn btn-dark">Conóceme <span aria-hidden="true">↗</span></a>
+          <a href="#cuaderno" class="btn btn-ghost">Ver cuaderno</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/TU-USUARIO" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+          <a href="https://www.linkedin.com/in/TU-USUARIO" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+          <a href="mailto:tucorreo@ejemplo.com" aria-label="Enviar correo">✉</a>
+        </div>
+        <p class="edit-note">Personaliza los textos, enlaces y datos de ejemplo antes de publicar.</p>
+      </div>
+      <div class="hero-photo reveal">
+        <div class="photo-circle"><img src="assets/img/foto.jpg" alt="Fotografía de Katy" id="foto"></div>
+        <div class="floating-note">✦ Aprender · Practicar · Crear</div>
+        <span class="decor decor-one" aria-hidden="true">✳</span>
+        <span class="decor decor-two" aria-hidden="true">✦</span>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section page">
+      <div class="section-heading reveal"><span class="eyebrow">Un poco sobre mí</span><h2 class="section-title">Sobre <span class="accent">mí</span></h2><p class="section-sub">Mi formación, intereses y habilidades en desarrollo.</p></div>
+      <div class="about-grid">
+        <article class="card reveal"><span class="card-icon">♡</span><h3>Quién soy</h3><p>Soy estudiante de Ingeniería de Sistemas y me interesa aprender cómo la tecnología puede resolver problemas y mejorar procesos. En este portafolio registro mi avance académico y las experiencias que contribuyen a mi formación.</p><p><strong>Mis intereses:</strong> desarrollo web, datos, diseño de soluciones y mejora continua.</p></article>
+        <article class="card reveal"><span class="card-icon">✎</span><h3>Estudios</h3><ul class="timeline"><li><strong>Ingeniería de Sistemas</strong><span>Universidad Nacional del Centro del Perú · En curso</span></li><li><strong>Educación secundaria</strong><span>Completa aquí el nombre de tu institución y el año.</span></li></ul></article>
+        <article class="card reveal"><span class="card-icon">⌘</span><h3>Experiencia</h3><ul class="timeline"><li><strong>Proyectos académicos</strong><span>Participación en trabajos universitarios, desarrollo de soluciones y documentación.</span></li><li><strong>Experiencia adicional</strong><span>Agrega prácticas, voluntariado o experiencia laboral si corresponde.</span></li></ul></article>
+        <article class="card reveal"><span class="card-icon">✧</span><h3>Habilidades</h3><div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>SQL</span><span>Git</span><span>GitHub</span><span>Trabajo en equipo</span><span>Documentación</span></div><p class="hint">Edita esta lista según tus conocimientos reales.</p></article>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section page">
+      <div class="section-heading reveal"><span class="eyebrow">Lo que he construido</span><h2 class="section-title">Proyectos <span class="accent">concluidos</span></h2><p class="section-sub">Una selección de trabajos académicos y personales. Cambia los ejemplos por proyectos terminados.</p></div>
+      <div class="projects-grid">
+        <article class="project reveal"><div class="project-img project-purple"><span aria-hidden="true">▦</span><small>01 / WEB</small></div><div class="project-body"><h3>Aplicación web académica</h3><p>Descripción breve del problema, la solución implementada y el resultado obtenido.</p><div class="chips small"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><a href="#" target="_blank" rel="noopener noreferrer">Ver proyecto ↗</a><a href="#" target="_blank" rel="noopener noreferrer">Código ↗</a></div></div></article>
+        <article class="project reveal"><div class="project-img project-pink"><span aria-hidden="true">▤</span><small>02 / DATOS</small></div><div class="project-body"><h3>Proyecto de datos</h3><p>Resume el objetivo del trabajo, las herramientas utilizadas y los principales resultados.</p><div class="chips small"><span>SQL</span><span>Análisis</span></div><div class="project-links"><a href="#" target="_blank" rel="noopener noreferrer">Ver proyecto ↗</a><a href="#" target="_blank" rel="noopener noreferrer">Código ↗</a></div></div></article>
+        <article class="project reveal"><div class="project-img project-mint"><span aria-hidden="true">◇</span><small>03 / GESTIÓN</small></div><div class="project-body"><h3>Documentación de proyecto</h3><p>Describe brevemente la necesidad atendida, tu aporte y los entregables elaborados.</p><div class="chips small"><span>Planificación</span><span>Documentación</span></div><div class="project-links"><a href="#" target="_blank" rel="noopener noreferrer">Ver documento ↗</a><a href="#" target="_blank" rel="noopener noreferrer">Repositorio ↗</a></div></div></article>
+      </div>
+      <p class="hint">Importante: reemplaza cada enlace <code>#</code> por una URL válida o elimina el enlace si no aplica.</p>
+    </section>
+
+    <section id="cuaderno" class="section page">
+      <div class="section-heading reveal"><span class="eyebrow">Registro semanal</span><h2 class="section-title">Mi <span class="accent">cuaderno</span></h2><p class="section-sub">Documenta cada semana con tus propias palabras, el procedimiento seguido y las evidencias del laboratorio.</p></div>
+      <div class="tabs reveal" role="tablist" aria-label="Semanas del cuaderno">
+        <button class="tab active" id="tab-s1" data-tab="s1" role="tab" aria-selected="true" aria-controls="s1">Semana 1</button>
+        <button class="tab" id="tab-s2" data-tab="s2" role="tab" aria-selected="false" aria-controls="s2">Semana 2</button>
+        <button class="tab" id="tab-s3" data-tab="s3" role="tab" aria-selected="false" aria-controls="s3">Semana 3</button>
+      </div>
+      <div class="tab-panel active" id="s1" role="tabpanel" aria-labelledby="tab-s1">
+        <div class="week-heading"><span class="week-number">01</span><div><h3>Semana 1</h3><p>Fecha o tema principal: <em>completar</em></p></div></div>
+        <div class="notebook">
+          <details open><summary>📘 Temas aprendidos</summary><div class="detail-body"><h4>Tema 1: Nombre del tema</h4><p><strong>Definición con mis palabras:</strong> Explica qué significa el concepto y para qué sirve.</p><p><strong>Procedimiento:</strong></p><ol><li>Describe el primer paso.</li><li>Explica qué herramienta o instrucción utilizaste.</li><li>Indica cómo comprobaste el resultado.</li></ol><p><strong>Conceptos clave:</strong> agrega aquí términos importantes.</p></div></details>
+          <details><summary>🧪 Ejercicios de laboratorio y resultados</summary><div class="detail-body"><h4>Ejercicio 1: Título o enunciado</h4><p><strong>Objetivo:</strong> ¿qué debías resolver?</p><p><strong>Procedimiento:</strong> describe los pasos realizados.</p><pre><code>// Pega aquí tu código o solución
+console.log("Mi primer ejercicio");</code></pre><p><strong>Resultado:</strong> explica qué obtuviste. Puedes agregar una captura en assets/img/ y mostrarla con una etiqueta img.</p><p><strong>Problemas y solución:</strong> registra cualquier error que hayas corregido.</p></div></details>
+          <details><summary>💭 Reflexión semanal</summary><div class="detail-body"><p><strong>¿Qué aprendí?</strong> Describe los conocimientos y habilidades que desarrollaste.</p><p><strong>¿Cómo aprendí?</strong> Explica qué actividades, prácticas, lecturas o consultas te ayudaron.</p><p><strong>¿Qué necesito reforzar?</strong> Señala una dificultad y cómo piensas mejorar.</p></div></details>
+        </div>
+      </div>
+      <div class="tab-panel" id="s2" role="tabpanel" aria-labelledby="tab-s2" hidden>
+        <div class="week-heading"><span class="week-number">02</span><div><h3>Semana 2</h3><p>Fecha o tema principal: <em>completar</em></p></div></div>
+        <div class="notebook">
+          <details open><summary>📘 Temas aprendidos</summary><div class="detail-body"><h4>Tema 1: Nombre del tema</h4><p><strong>Definición con mis palabras:</strong> explica el concepto sin copiar literalmente una fuente.</p><p><strong>Procedimiento:</strong></p><ol><li>Primer paso.</li><li>Segundo paso.</li><li>Verificación del resultado.</li></ol></div></details>
+          <details><summary>🧪 Ejercicios de laboratorio y resultados</summary><div class="detail-body"><h4>Ejercicio 1: Título</h4><p><strong>Objetivo:</strong> completa esta sección.</p><p><strong>Procedimiento y solución:</strong> describe lo que hiciste.</p><pre><code>// Pega aquí tu código o solución</code></pre><p><strong>Resultado y evidencia:</strong> explica el resultado y agrega capturas si corresponde.</p></div></details>
+          <details><summary>💭 Reflexión semanal</summary><div class="detail-body"><p><strong>¿Qué aprendí?</strong> …</p><p><strong>¿Cómo aprendí?</strong> …</p><p><strong>¿Qué necesito reforzar?</strong> …</p></div></details>
+        </div>
+      </div>
+      <div class="tab-panel" id="s3" role="tabpanel" aria-labelledby="tab-s3" hidden>
+        <div class="week-heading"><span class="week-number">03</span><div><h3>Semana 3</h3><p>Fecha o tema principal: <em>completar</em></p></div></div>
+        <div class="notebook">
+          <details open><summary>📘 Temas aprendidos</summary><div class="detail-body"><h4>Tema 1: Nombre del tema</h4><p><strong>Definición con mis palabras:</strong> explica el concepto, su utilidad y un ejemplo.</p><p><strong>Procedimiento:</strong></p><ol><li>Primer paso.</li><li>Segundo paso.</li><li>Verificación del resultado.</li></ol></div></details>
+          <details><summary>🧪 Ejercicios de laboratorio y resultados</summary><div class="detail-body"><h4>Ejercicio 1: Título</h4><p><strong>Objetivo:</strong> completa esta sección.</p><p><strong>Procedimiento y solución:</strong> describe lo que hiciste.</p><pre><code>// Pega aquí tu código o solución</code></pre><p><strong>Resultado y evidencia:</strong> explica qué conseguiste y agrega capturas si corresponde.</p></div></details>
+          <details><summary>💭 Reflexión semanal</summary><div class="detail-body"><p><strong>¿Qué aprendí?</strong> …</p><p><strong>¿Cómo aprendí?</strong> …</p><p><strong>¿Qué necesito reforzar?</strong> …</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="reflexion" class="section page">
+      <div class="section-heading reveal"><span class="eyebrow">Mirar hacia atrás también es aprender</span><h2 class="section-title">Reflexión <span class="accent">metacognitiva</span></h2><p class="section-sub">Registra qué aprendiste, cómo lo aprendiste y qué estrategias te funcionaron mejor.</p></div>
+      <div class="reflection-grid">
+        <article class="card reveal"><span class="reflection-label">SEMANA 01</span><h3>Mi aprendizaje</h3><p><strong>¿Qué aprendí?</strong> Completa con los conocimientos y habilidades de la primera semana.</p><p><strong>¿Cómo aprendí?</strong> Explica las actividades y estrategias que te ayudaron.</p></article>
+        <article class="card reveal"><span class="reflection-label">SEMANA 02</span><h3>Mi aprendizaje</h3><p><strong>¿Qué aprendí?</strong> Describe los avances y conceptos comprendidos.</p><p><strong>¿Cómo aprendí?</strong> Señala las prácticas, lecturas o ejercicios que te sirvieron.</p></article>
+        <article class="card reveal"><span class="reflection-label">SEMANA 03</span><h3>Mi aprendizaje</h3><p><strong>¿Qué aprendí?</strong> Resume tus nuevos conocimientos.</p><p><strong>¿Cómo aprendí?</strong> Identifica qué estrategia fue más efectiva y por qué.</p></article>
+        <article class="card card-wide reveal"><span class="reflection-label">CIERRE DEL CURSO</span><h3>Reflexión final del curso</h3><p><strong>¿Qué aprendí?</strong> Redacta una síntesis de los conocimientos, habilidades y actitudes que desarrollaste durante el curso.</p><p><strong>¿Cómo aprendí?</strong> Explica cómo contribuyeron las clases, los ejercicios, la práctica autónoma, la retroalimentación y la revisión de errores.</p><p><strong>¿Cómo aplicaré lo aprendido?</strong> Relaciona el aprendizaje con futuros cursos, proyectos o situaciones profesionales. Menciona también qué aspectos deseas seguir mejorando.</p></article>
+      </div>
+    </section>
+
+    <section id="bibliografia" class="section page">
+      <div class="section-heading reveal"><span class="eyebrow">Fuentes consultadas</span><h2 class="section-title">Biblio<span class="accent">grafía</span></h2><p class="section-sub">Incluye libros y páginas web consultadas. Según la indicación del curso, no agregues videos.</p></div>
+      <div class="biblio-grid">
+        <article class="card reveal"><span class="card-icon">▤</span><h3>Libros</h3><ol class="biblio"><li>Apellido, N. (Año). <em>Título del libro</em>. Editorial.</li><li>Apellido, N. (Año). <em>Título del segundo libro</em>. Editorial.</li></ol><p class="hint">Completa los datos de los libros que realmente consultaste.</p></article>
+        <article class="card reveal"><span class="card-icon">↗</span><h3>Recursos web</h3><ul class="biblio"><li><a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener noreferrer">MDN Web Docs — documentación web</a></li><li><a href="https://docs.github.com/es" target="_blank" rel="noopener noreferrer">Documentación oficial de GitHub</a></li><li><a href="https://html.spec.whatwg.org/" target="_blank" rel="noopener noreferrer">HTML Living Standard</a></li></ul><p class="hint">Añade fecha de consulta si el formato de citación solicitado lo requiere.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-mark">K.</div><h2>Gracias por visitar mi portafolio</h2><p>Un registro de lo que aprendo, practico y construyo.</p><a href="mailto:tucorreo@ejemplo.com" class="btn btn-dark">Escríbeme ↗</a>
+    <small>© <span id="year"></span> Katy · Ingeniería de Sistemas · UNCP</small>
+  </footer>
+  <button id="toTop" class="to-top" aria-label="Volver al inicio" title="Volver arriba">↑</button>
+</body>
+</html>
