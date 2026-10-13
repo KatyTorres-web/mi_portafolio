@@ -52,14 +52,26 @@ if (menu && burger) {
     const isOpen = menu.classList.toggle("open");
     burger.setAttribute("aria-expanded", String(isOpen));
     burger.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
-    burger.textContent = isOpen ? "×" : "☰";
+    burger.innerHTML = isOpen
+      ? '<i class="fa-solid fa-xmark" aria-hidden="true"></i>'
+      : '<i class="fa-solid fa-bars" aria-hidden="true"></i>';
   });
   $$("#menu a").forEach(link => link.addEventListener("click", () => {
     menu.classList.remove("open");
     burger.setAttribute("aria-expanded", "false");
     burger.setAttribute("aria-label", "Abrir menú");
-    burger.textContent = "☰";
+    burger.innerHTML = '<i class="fa-solid fa-bars" aria-hidden="true"></i>';
   }));
+}
+
+const currentPage = document.body.dataset.page;
+if (currentPage) {
+  $$("#menu a").forEach(link => {
+    const active = link.dataset.page === currentPage;
+    link.classList.toggle("active", active);
+    if (active) link.setAttribute("aria-current", "page");
+    else link.removeAttribute("aria-current");
+  });
 }
 
 /* Tema claro/oscuro, con preferencia guardada */
@@ -68,7 +80,9 @@ const root = document.documentElement;
 function applyTheme(theme) {
   root.setAttribute("data-theme", theme);
   if (themeBtn) {
-    themeBtn.textContent = theme === "dark" ? "☀️" : "🌙";
+    themeBtn.innerHTML = theme === "dark"
+      ? '<i class="fa-solid fa-sun" aria-hidden="true"></i>'
+      : '<i class="fa-solid fa-moon" aria-hidden="true"></i>';
     themeBtn.setAttribute("aria-label", theme === "dark" ? "Cambiar a tema claro" : "Cambiar a tema oscuro");
   }
 }
@@ -112,35 +126,11 @@ tabs.forEach((tab, index) => {
   });
 });
 
-/* Navegación: muestra una sección por vez y permite compartir el enlace con #seccion */
-const pages = $$(".page");
-const navLinks = $$("#menu a");
-function showPage() {
-  let id = decodeURIComponent(window.location.hash.slice(1));
-  if (!pages.some(page => page.id === id)) id = "inicio";
-  pages.forEach(page => page.classList.toggle("active", page.id === id));
-  navLinks.forEach(link => {
-    const active = link.getAttribute("href") === `#${id}`;
-    link.classList.toggle("active", active);
-    if (active) link.setAttribute("aria-current", "page");
-    else link.removeAttribute("aria-current");
-  });
-  if (menu) menu.classList.remove("open");
-  if (burger) {
-    burger.setAttribute("aria-expanded", "false");
-    burger.textContent = "☰";
-    burger.setAttribute("aria-label", "Abrir menú");
-  }
-  window.scrollTo({ top: 0, behavior: "auto" });
-  observeReveals();
-}
-window.addEventListener("hashchange", showPage);
-
 /* Animaciones de entrada; fallback para navegadores sin IntersectionObserver */
 let revealObserver;
 function observeReveals() {
   if (!("IntersectionObserver" in window)) {
-    $$(".page.active .reveal").forEach(el => el.classList.add("visible"));
+    $$(".reveal").forEach(el => el.classList.add("visible"));
     return;
   }
   if (revealObserver) revealObserver.disconnect();
@@ -152,7 +142,7 @@ function observeReveals() {
       }
     });
   }, { threshold: 0.08 });
-  $$(".page.active .reveal").forEach(el => {
+  $$(".reveal").forEach(el => {
     if (!el.classList.contains("visible")) revealObserver.observe(el);
   });
 }
@@ -166,4 +156,4 @@ if (toTop) {
 const year = $("#year");
 if (year) year.textContent = new Date().getFullYear();
 
-showPage();
+observeReveals();

@@ -1,4 +1,4 @@
-# Portafolio académico de Katy
+# Portafolio académico de KT
 
 Portafolio estático desarrollado con **HTML, CSS y JavaScript**, preparado para publicarse en **GitHub Pages**. No requiere Node.js, compilación ni dependencias.
 
@@ -14,6 +14,13 @@ portafolio-katy/
 │   ├── js/script.js
 │   └── img/                 # fotografía y evidencias
 ├── docs/                    # CV u otros documentos que quieras publicar
+├── vistas/                  # una página HTML por cada opción del menú
+│   ├── inicio.html
+│   ├── sobre-mi.html
+│   ├── proyectos.html
+│   ├── cuaderno.html
+│   ├── reflexion.html
+│   └── bibliografia.html
 └── semanas/
     ├── semana-1.md
     ├── semana-2.md
@@ -29,8 +36,10 @@ portafolio-katy/
 
 ## Personalización rápida
 
-- **Presentación y secciones:** `index.html`.
+- **Páginas del menú:** cada vista se edita en su archivo correspondiente dentro de `vistas/`.
+- **Entrada del sitio:** `index.html` dirige a `vistas/inicio.html`.
 - **Colores, tamaños y diseño adaptable:** `assets/css/style.css`. Las variables principales están al inicio del archivo.
+- **Iconos:** las vistas usan Font Awesome Free 6.7.2 desde cdnjs; se necesita conexión a Internet para cargarlos.
 - **Animaciones, menú, tema y pestañas:** `assets/js/script.js`.
 - **Foto:** coloca tu imagen en `assets/img/foto.jpg`.
 - **CV:** coloca el PDF en `docs/CV-Katy.pdf`. Si no vas a publicar un CV, elimina los botones correspondientes.
