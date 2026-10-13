@@ -1,32 +1,311 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Reflexiones metacognitivas del aprendizaje de KT."><title>KT | Reflexión</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="../assets/css/style.css"><script src="../assets/js/script.js" defer></script><script src="../assets/js/footer.js" defer></script>
-</head>
-<body data-page="reflexion">
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
-  <header class="navbar">
-    <a href="inicio.html" class="logo" aria-label="Ir al inicio">KT<span>.</span></a><button id="burger" class="icon-btn burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
-    <nav id="menu" class="menu" aria-label="Navegación principal"><a href="inicio.html" data-page="inicio">Inicio</a><a href="sobre-mi.html" data-page="sobre-mi">Sobre mí</a><a href="proyectos.html" data-page="proyectos">Proyectos</a><a href="cuaderno.html" data-page="cuaderno">Cuaderno</a><a href="reflexion.html" data-page="reflexion">Reflexión</a><a href="bibliografia.html" data-page="bibliografia">Bibliografía</a></nav>
-    <div class="nav-actions"><button id="themeToggle" class="icon-btn" aria-label="Cambiar a tema oscuro" title="Cambiar tema"><i class="fa-solid fa-moon" aria-hidden="true"></i></button><a href="../docs/CV-Katy.pdf" class="btn btn-ghost btn-sm" download>Descargar CV</a></div>
-  </header>
-  <main id="contenido">
-    <section id="reflexion" class="section page active">
-      <div class="section-heading reveal"><span class="eyebrow">Mirar hacia atrás también es aprender</span><h1 class="section-title">Reflexión <span class="accent">metacognitiva</span></h1><p class="section-sub">Registra qué aprendiste, cómo lo aprendiste y qué estrategias te funcionaron mejor.</p></div>
-      <div class="reflection-grid">
-        <article class="card reveal"><span class="reflection-label">SEMANA 01</span><h2>Mi aprendizaje</h2><p><strong>¿Qué aprendí?</strong> Completa con los conocimientos y habilidades de la primera semana.</p><p><strong>¿Cómo aprendí?</strong> Explica las actividades y estrategias que te ayudaron.</p></article>
-        <article class="card reveal"><span class="reflection-label">SEMANA 02</span><h2>Mi aprendizaje</h2><p><strong>¿Qué aprendí?</strong> Describe los avances y conceptos comprendidos.</p><p><strong>¿Cómo aprendí?</strong> Señala las prácticas, lecturas o ejercicios que te sirvieron.</p></article>
-        <article class="card reveal"><span class="reflection-label">SEMANA 03</span><h2>Mi aprendizaje</h2><p><strong>¿Qué aprendí?</strong> Resume tus nuevos conocimientos.</p><p><strong>¿Cómo aprendí?</strong> Identifica qué estrategia fue más efectiva y por qué.</p></article>
-        <article class="card card-wide reveal"><span class="reflection-label">CIERRE DEL CURSO</span><h2>Reflexión final del curso</h2><p><strong>¿Qué aprendí?</strong> Redacta una síntesis de los conocimientos, habilidades y actitudes que desarrollaste durante el curso.</p><p><strong>¿Cómo aprendí?</strong> Explica cómo contribuyeron las clases, los ejercicios, la práctica autónoma, la retroalimentación y la revisión de errores.</p><p><strong>¿Cómo aplicaré lo aprendido?</strong> Relaciona el aprendizaje con futuros cursos, proyectos o situaciones profesionales. Menciona también qué aspectos deseas seguir mejorando.</p></article>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Reflexiones metacognitivas del aprendizaje de KT."
+    />
+    <title>KT | Reflexión</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="../assets/js/script.js" defer></script>
+    <script src="../assets/js/footer.js" defer></script>
+  </head>
+  <body data-page="reflexion">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="navbar">
+      <a href="inicio.html" class="logo" aria-label="Ir al inicio"
+        >KT<span>.</span></a
+      ><button
+        id="burger"
+        class="icon-btn burger"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="menu"
+      >
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+      <nav id="menu" class="menu" aria-label="Navegación principal">
+        <a href="inicio.html" data-page="inicio">Inicio</a
+        ><a href="sobre-mi.html" data-page="sobre-mi">Sobre mí</a
+        ><a href="proyectos.html" data-page="proyectos">Proyectos</a
+        ><a href="cuaderno.html" data-page="cuaderno">Cuaderno</a
+        ><a href="reflexion.html" data-page="reflexion">Reflexión</a
+        ><a href="bibliografia.html" data-page="bibliografia">Bibliografía</a>
+      </nav>
+      <div class="nav-actions">
+        <button
+          id="themeToggle"
+          class="icon-btn"
+          aria-label="Cambiar a tema oscuro"
+          title="Cambiar tema"
+        >
+          <i class="fa-solid fa-moon" aria-hidden="true"></i></button
+        ><a href="../docs/CV-Katy.pdf" class="btn btn-ghost btn-sm" download
+          >Descargar CV</a
+        >
       </div>
-    </section>
-  </main>
-  <footer id="siteFooter" class="footer"></footer>
-  <button id="toTop" class="to-top" aria-label="Volver al inicio" title="Volver arriba"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
-</body>
+    </header>
+    <main id="contenido">
+      <section id="reflexion" class="section page active">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Mirar hacia atrás también es aprender</span>
+          <h1 class="section-title">
+            Reflexión <span class="accent">metacognitiva</span>
+          </h1>
+          <p class="section-sub">
+            Durante el curso fortalecí mis conocimientos sobre la creación de
+            interfaces, la organización del código y el desarrollo de
+            aplicaciones interactivas. Cada práctica me permitió reconocer mis
+            avances, identificar dificultades y descubrir qué aspectos necesito
+            seguir mejorando.
+          </p>
+        </div>
+        <div class="reflection-grid">
+          <article class="card reveal">
+            <span class="reflection-label">SEMANA 01</span>
+            <h2>Fundamentos de la Web y configuración del entorno</h2>
+            <p>
+              <strong>¿Qué aprendí?</strong> Aprendí los conceptos fundamentales
+              del desarrollo web y las diferencias entre una página web, un
+              sitio web, una aplicación web y un sistema web. También comprendí
+              de manera general cómo funciona la comunicación entre el navegador
+              y el servidor mediante HTTP y HTTPS. Además, conocí las
+              herramientas principales de Visual Studio Code y la utilidad de
+              GitHub para organizar y compartir proyectos.
+            </p>
+            <p>
+              <strong>¿Cómo aprendí?</strong> Mediante la revisión de conceptos,
+              la exploración del entorno de desarrollo y el reconocimiento de
+              las herramientas necesarias para comenzar a programar. La práctica
+              me permitió familiarizarme con el editor de código, sus
+              extensiones y la organización de archivos de un proyecto web.
+            </p>
+            <p>
+              <strong>¿Qué necesito reforzar?</strong> Necesito seguir
+              practicando Git y GitHub, especialmente la gestión de cambios y
+              la organización de repositorios. También quiero profundizar en el
+              funcionamiento de los protocolos web para comprender mejor la
+              comunicación entre el cliente y el servidor.
+            </p>
+          </article>
+          <article class="card reveal">
+            <span class="reflection-label">SEMANA 02</span>
+            <h2>HTML5, CSS3 y diseño responsivo</h2>
+            <p>
+              <strong>¿Qué aprendí?</strong> Aprendí a comprender la estructura
+              de una página web mediante HTML5 y la función de CSS en la
+              presentación visual del contenido. Reforcé el uso de elementos
+              semánticos y conocí técnicas de distribución como Flexbox y CSS
+              Grid. También comprendí la importancia del diseño responsivo, los
+              metadatos, la accesibilidad y la optimización básica para motores
+              de búsqueda.
+            </p>
+            <p>
+              <strong>¿Cómo aprendí?</strong> Mediante ejercicios de
+              estructuración y maquetación, la revisión de propiedades CSS y el
+              análisis de diferentes formas de distribuir los elementos de una
+              interfaz. La comparación de diseños y el estudio de unidades
+              relativas me ayudaron a comprender cómo adaptar una página a
+              diferentes tamaños de pantalla.
+            </p>
+            <p>
+              <strong>¿Qué necesito reforzar?</strong> Necesito mejorar mi
+              capacidad para combinar Flexbox y Grid en diseños más complejos.
+              También debo prestar mayor atención a la accesibilidad, la
+              validación del código y las pruebas en distintos dispositivos y
+              navegadores.
+            </p>
+          </article>
+          <article class="card reveal">
+            <span class="reflection-label">SEMANA 03</span>
+            <h2>Frameworks CSS: Bootstrap y Tailwind CSS</h2>
+            <p>
+              <strong>¿Qué aprendí?</strong> Aprendí que los frameworks CSS
+              facilitan la construcción de interfaces mediante componentes
+              reutilizables y clases de utilidad. Comprendí las diferencias
+              entre Bootstrap, que proporciona componentes y estructuras
+              predefinidas, y Tailwind CSS, que permite aplicar estilos mediante
+              clases específicas. También reforcé la creación de barras de
+              navegación, tarjetas y layouts responsivos.
+            </p>
+            <p>
+              <strong>¿Cómo aprendí?</strong> Mediante las prácticas de
+              maquetación y la reproducción de interfaces de referencia. Los
+              ejercicios de las prácticas calificadas me permitieron analizar
+              la distribución de los elementos, aplicar estilos y comprender la
+              importancia de mantener una presentación coherente en diferentes
+              tamaños de pantalla.
+            </p>
+            <p>
+              <strong>¿Qué necesito reforzar?</strong> Necesito desarrollar
+              mayor criterio para elegir entre CSS tradicional, Bootstrap y
+              Tailwind CSS según las necesidades del proyecto. También quiero
+              mejorar la organización de las clases y evitar estilos
+              innecesarios que dificulten el mantenimiento del código.
+            </p>
+          </article>
+          <article class="card reveal">
+            <span class="reflection-label">SEMANA 04</span>
+            <h2>JavaScript, DOM y animaciones</h2>
+            <p>
+              <strong>¿Qué aprendí?</strong> Aprendí que JavaScript permite
+              agregar interactividad a las páginas web mediante eventos y
+              modificaciones del DOM. También estudié el uso de funciones
+              flecha, funciones autoinvocadas (IIFE) y closures. Asimismo,
+              conocí la utilidad de Canvas API y
+              <code>requestAnimationFrame()</code> para desarrollar animaciones
+              y actualizar elementos gráficos.
+            </p>
+            <p>
+              <strong>¿Cómo aprendí?</strong> Mediante el análisis de ejemplos
+              de código y la práctica de funcionalidades interactivas. El
+              trabajo relacionado con el proyecto Catch Ball me permitió
+              relacionar los conceptos de JavaScript con la lógica de una
+              experiencia dinámica, mientras que la revisión de eventos y
+              funciones me ayudó a comprender cómo organizar el comportamiento
+              de una página.
+            </p>
+            <p>
+              <strong>¿Qué necesito reforzar?</strong> Necesito practicar más
+              la manipulación del DOM, el manejo de eventos y la organización de
+              funciones. También quiero profundizar en el funcionamiento de las
+              animaciones para comprender mejor su ciclo de ejecución y evitar
+              actualizaciones innecesarias.
+            </p>
+          </article>
+          <article class="card reveal">
+            <span class="reflection-label">SEMANA 05</span>
+            <h2>React, JSX y componentes</h2>
+            <p>
+              <strong>¿Qué aprendí?</strong> Aprendí los fundamentos de React
+              como biblioteca para construir interfaces mediante componentes
+              reutilizables. Comprendí la función de Vite en la configuración
+              del entorno, el uso de JSX para describir interfaces y la
+              transmisión de datos mediante props. También estudié children, la
+              composición de componentes y las estrategias de estilado para
+              organizar una aplicación de página única (SPA).
+            </p>
+            <p>
+              <strong>¿Cómo aprendí?</strong> Mediante la configuración y
+              organización de un proyecto React, la revisión de componentes y
+              los ejercicios de transmisión de datos entre componentes. El
+              desarrollo de la práctica <code>practica_semana5_DAW</code> me
+              permitió relacionar la arquitectura de componentes con la
+              construcción de una interfaz.
+            </p>
+            <p>
+              <strong>¿Qué necesito reforzar?</strong> Necesito mejorar la
+              separación de responsabilidades entre componentes y practicar la
+              transmisión de datos para evitar estructuras difíciles de
+              mantener. También quiero profundizar en el funcionamiento del
+              renderizado de React y en la aplicación de estilos organizados y
+              reutilizables.
+            </p>
+          </article>
+          <article class="card reveal">
+            <span class="reflection-label">SEMANA 06</span>
+            <h2>React, eventos, formularios, routing y APIs</h2>
+            <p>
+              <strong>¿Qué aprendí?</strong> Aprendí a relacionar los eventos
+              con las acciones del usuario y a comprender el renderizado
+              condicional e iterativo en React. También estudié el manejo del
+              estado con <code>useState</code>, la navegación mediante React
+              Router y el consumo de información desde APIs utilizando Axios y
+              <code>async/await</code>. Comprendí la importancia de gestionar
+              los estados de carga, los datos recibidos y los posibles errores
+              durante una solicitud.
+            </p>
+            <p>
+              <strong>¿Cómo aprendí?</strong> Mediante el análisis de la
+              estructura de una aplicación React y los ejercicios orientados a
+              la navegación, los formularios y la obtención de información
+              externa. La práctica
+              <code>Practica-semana-6_misk-i-bitter</code> me permitió
+              relacionar los conceptos estudiados con la organización de
+              páginas, componentes y servicios de una aplicación frontend.
+            </p>
+            <p>
+              <strong>¿Qué necesito reforzar?</strong> Necesito practicar el
+              manejo de errores en las solicitudes a APIs, la validación de
+              formularios y la actualización del estado. También quiero mejorar
+              la organización de las rutas y comprender mejor cómo gestionar
+              los datos para que la interfaz responda correctamente ante
+              diferentes situaciones.
+            </p>
+          </article>
+          <article class="card card-wide reveal">
+            <span class="reflection-label">CIERRE DEL CURSO</span>
+            <h2>Reflexión final del curso</h2>
+            <p>
+              <strong>¿Qué aprendí?</strong> Durante el curso comprendí
+              progresivamente las principales etapas del desarrollo frontend,
+              desde la estructura de una página con HTML hasta la creación de
+              interfaces interactivas con JavaScript y aplicaciones organizadas
+              mediante React. Aprendí a utilizar herramientas de desarrollo,
+              aplicar estilos responsivos, organizar componentes, gestionar
+              eventos y comprender los fundamentos de la navegación y el
+              consumo de APIs. Además, reconocí que un proyecto web no consiste
+              únicamente en presentar información: también requiere organizar
+              el código, facilitar la interacción y considerar la accesibilidad,
+              el mantenimiento y la experiencia de uso.
+            </p>
+            <p>
+              <strong>¿Cómo aprendí?</strong> Mediante las clases, las guías de
+              práctica, los ejercicios de laboratorio y la revisión de proyectos
+              en GitHub. La elaboración de diferentes interfaces me permitió
+              relacionar la teoría con la práctica y comprender que cada
+              tecnología cumple una función dentro del desarrollo web.
+              Asimismo, la revisión de errores y la búsqueda de soluciones
+              fortalecieron mi capacidad para analizar problemas, probar
+              alternativas y mejorar progresivamente mi trabajo.
+            </p>
+            <p>
+              <strong>¿Cómo aplicaré lo aprendido?</strong> Aplicaré estos
+              conocimientos en futuros proyectos académicos y profesionales,
+              especialmente en aplicaciones que permitan organizar información
+              y facilitar procesos. Un ejemplo relacionado con mi experiencia
+              es el sistema de gestión de expedientes desarrollado para la
+              Municipalidad Distrital de Sapallanga, cuyo propósito es
+              digitalizar el registro manual y facilitar la trazabilidad y
+              derivación de los expedientes. Continuaré fortaleciendo mis
+              habilidades en React, JavaScript, diseño responsivo y consumo de
+              APIs para desarrollar aplicaciones comprensibles, mantenibles y
+              útiles para las personas.
+            </p>
+            <p>
+              <strong>Compromiso de mejora personal:</strong> Reconozco que
+              aprender desarrollo web requiere práctica constante, curiosidad y
+              disposición para corregir errores. Continuaré documentando mis
+              avances, revisando la calidad de mi código y utilizando la
+              retroalimentación para identificar oportunidades de mejora.
+              Considero que aprender de manera autónoma y evaluar mi propio
+              progreso será fundamental para seguir creciendo como estudiante
+              de Ingeniería de Sistemas.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer id="siteFooter" class="footer"></footer>
+    <button
+      id="toTop"
+      class="to-top"
+      aria-label="Volver al inicio"
+      title="Volver arriba"
+    >
+      <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+  </body>
 </html>

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
     <script src="../assets/js/script.js" defer></script>
     <script src="../assets/js/footer.js" defer></script>
+    <script src="../assets/js/cuaderno.js" defer></script>
   </head>
   <body data-page="cuaderno">
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -63,8 +64,8 @@
           <span class="eyebrow">Registro semanal</span>
           <h1 class="section-title">Mi <span class="accent">cuaderno</span></h1>
           <p class="section-sub">
-            Documenta cada semana con tus propias palabras, el procedimiento
-            seguido y las evidencias del laboratorio.
+            Cada semana reúne los temas aprendidos, las prácticas realizadas y
+            una reflexión personal.
           </p>
         </div>
         <div
@@ -102,220 +103,101 @@
           >
             Semana 3
           </button>
+          <button
+            class="tab"
+            id="tab-s4"
+            data-tab="s4"
+            role="tab"
+            aria-selected="false"
+            aria-controls="s4"
+          >
+            Semana 4
+          </button>
+          <button
+            class="tab"
+            id="tab-s5"
+            data-tab="s5"
+            role="tab"
+            aria-selected="false"
+            aria-controls="s5"
+          >
+            Semana 5
+          </button>
+          <button
+            class="tab"
+            id="tab-s6"
+            data-tab="s6"
+            role="tab"
+            aria-selected="false"
+            aria-controls="s6"
+          >
+            Semana 6
+          </button>
         </div>
-        <div
-          class="tab-panel active"
-          id="s1"
-          role="tabpanel"
-          aria-labelledby="tab-s1"
-        >
+        <div class="tab-panel active" id="s1" role="tabpanel" aria-labelledby="tab-s1">
           <div class="week-heading">
             <span class="week-number">01</span>
-            <div>
-              <h2>Semana 1</h2>
-              <p>Fecha o tema principal: <em>completar</em></p>
-            </div>
+            <div><h2>Semana 1</h2><p data-week-topic>Cargando registro…</p></div>
           </div>
-          <div class="notebook">
-            <details open>
-              <summary>
-                <i class="fa-solid fa-book-open" aria-hidden="true"></i> Temas
-                aprendidos
-              </summary>
-              <div class="detail-body">
-                <h3>Tema 1: Nombre del tema</h3>
-                <p>
-                  <strong>Definición con mis palabras:</strong> Explica qué
-                  significa el concepto y para qué sirve.
-                </p>
-                <p><strong>Procedimiento:</strong></p>
-                <ol>
-                  <li>Describe el primer paso.</li>
-                  <li>Explica qué herramienta o instrucción utilizaste.</li>
-                  <li>Indica cómo comprobaste el resultado.</li>
-                </ol>
-                <p>
-                  <strong>Conceptos clave:</strong> agrega aquí términos
-                  importantes.
-                </p>
-              </div>
-            </details>
-            <details>
-              <summary>
-                <i class="fa-solid fa-flask" aria-hidden="true"></i> Ejercicios
-                de laboratorio y resultados
-              </summary>
-              <div class="detail-body">
-                <h3>Ejercicio 1: Título o enunciado</h3>
-                <p><strong>Objetivo:</strong> ¿qué debías resolver?</p>
-                <p>
-                  <strong>Procedimiento:</strong> describe los pasos realizados.
-                </p>
-                <pre><code>// Pega aquí tu código o solución
-console.log("Mi primer ejercicio");</code></pre>
-                <p>
-                  <strong>Resultado:</strong> explica qué obtuviste. Puedes
-                  agregar una captura en assets/img/ y mostrarla con una
-                  etiqueta img.
-                </p>
-                <p>
-                  <strong>Problemas y solución:</strong> registra cualquier
-                  error que hayas corregido.
-                </p>
-              </div>
-            </details>
-            <details>
-              <summary>
-                <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
-                Reflexión semanal
-              </summary>
-              <div class="detail-body">
-                <p>
-                  <strong>¿Qué aprendí?</strong> Describe los conocimientos y
-                  habilidades que desarrollaste.
-                </p>
-                <p>
-                  <strong>¿Cómo aprendí?</strong> Explica qué actividades,
-                  prácticas, lecturas o consultas te ayudaron.
-                </p>
-                <p>
-                  <strong>¿Qué necesito reforzar?</strong> Señala una dificultad
-                  y cómo piensas mejorar.
-                </p>
-              </div>
-            </details>
+          <div class="notebook" data-week-content="1" aria-busy="true">
+            <details open><summary><i class="fa-solid fa-book-open" aria-hidden="true"></i> Temas aprendidos</summary><div class="detail-body" data-section="Temas aprendidos"></div></details>
+            <details><summary><i class="fa-solid fa-flask" aria-hidden="true"></i> Ejercicios de laboratorio y resultados</summary><div class="detail-body" data-section="Ejercicios de laboratorio y resultados"></div></details>
+            <details><summary><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Reflexión semanal</summary><div class="detail-body" data-section="Reflexión semanal"></div></details>
           </div>
         </div>
-        <div
-          class="tab-panel"
-          id="s2"
-          role="tabpanel"
-          aria-labelledby="tab-s2"
-          hidden
-        >
+        <div class="tab-panel" id="s2" role="tabpanel" aria-labelledby="tab-s2" hidden>
           <div class="week-heading">
             <span class="week-number">02</span>
-            <div>
-              <h2>Semana 2</h2>
-              <p>Fecha o tema principal: <em>completar</em></p>
-            </div>
+            <div><h2>Semana 2</h2><p data-week-topic>Cargando registro…</p></div>
           </div>
-          <div class="notebook">
-            <details open>
-              <summary>
-                <i class="fa-solid fa-book-open" aria-hidden="true"></i> Temas
-                aprendidos
-              </summary>
-              <div class="detail-body">
-                <h3>Tema 1: Nombre del tema</h3>
-                <p>
-                  <strong>Definición con mis palabras:</strong> explica el
-                  concepto sin copiar literalmente una fuente.
-                </p>
-                <p><strong>Procedimiento:</strong></p>
-                <ol>
-                  <li>Primer paso.</li>
-                  <li>Segundo paso.</li>
-                  <li>Verificación del resultado.</li>
-                </ol>
-              </div>
-            </details>
-            <details>
-              <summary>
-                <i class="fa-solid fa-flask" aria-hidden="true"></i> Ejercicios
-                de laboratorio y resultados
-              </summary>
-              <div class="detail-body">
-                <h3>Ejercicio 1: Título</h3>
-                <p><strong>Objetivo:</strong> completa esta sección.</p>
-                <p>
-                  <strong>Procedimiento y solución:</strong> describe lo que
-                  hiciste.
-                </p>
-                <pre><code>// Pega aquí tu código o solución</code></pre>
-                <p>
-                  <strong>Resultado y evidencia:</strong> explica el resultado y
-                  agrega capturas si corresponde.
-                </p>
-              </div>
-            </details>
-            <details>
-              <summary>
-                <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
-                Reflexión semanal
-              </summary>
-              <div class="detail-body">
-                <p><strong>¿Qué aprendí?</strong> …</p>
-                <p><strong>¿Cómo aprendí?</strong> …</p>
-                <p><strong>¿Qué necesito reforzar?</strong> …</p>
-              </div>
-            </details>
+          <div class="notebook" data-week-content="2" aria-busy="true">
+            <details open><summary><i class="fa-solid fa-book-open" aria-hidden="true"></i> Temas aprendidos</summary><div class="detail-body" data-section="Temas aprendidos"></div></details>
+            <details><summary><i class="fa-solid fa-flask" aria-hidden="true"></i> Ejercicios de laboratorio y resultados</summary><div class="detail-body" data-section="Ejercicios de laboratorio y resultados"></div></details>
+            <details><summary><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Reflexión semanal</summary><div class="detail-body" data-section="Reflexión semanal"></div></details>
           </div>
         </div>
-        <div
-          class="tab-panel"
-          id="s3"
-          role="tabpanel"
-          aria-labelledby="tab-s3"
-          hidden
-        >
+        <div class="tab-panel" id="s3" role="tabpanel" aria-labelledby="tab-s3" hidden>
           <div class="week-heading">
             <span class="week-number">03</span>
-            <div>
-              <h2>Semana 3</h2>
-              <p>Fecha o tema principal: <em>completar</em></p>
-            </div>
+            <div><h2>Semana 3</h2><p data-week-topic>Cargando registro…</p></div>
           </div>
-          <div class="notebook">
-            <details open>
-              <summary>
-                <i class="fa-solid fa-book-open" aria-hidden="true"></i> Temas
-                aprendidos
-              </summary>
-              <div class="detail-body">
-                <h3>Tema 1: Nombre del tema</h3>
-                <p>
-                  <strong>Definición con mis palabras:</strong> explica el
-                  concepto, su utilidad y un ejemplo.
-                </p>
-                <p><strong>Procedimiento:</strong></p>
-                <ol>
-                  <li>Primer paso.</li>
-                  <li>Segundo paso.</li>
-                  <li>Verificación del resultado.</li>
-                </ol>
-              </div>
-            </details>
-            <details>
-              <summary>
-                <i class="fa-solid fa-flask" aria-hidden="true"></i> Ejercicios
-                de laboratorio y resultados
-              </summary>
-              <div class="detail-body">
-                <h3>Ejercicio 1: Título</h3>
-                <p><strong>Objetivo:</strong> completa esta sección.</p>
-                <p>
-                  <strong>Procedimiento y solución:</strong> describe lo que
-                  hiciste.
-                </p>
-                <pre><code>// Pega aquí tu código o solución</code></pre>
-                <p>
-                  <strong>Resultado y evidencia:</strong> explica qué
-                  conseguiste y agrega capturas si corresponde.
-                </p>
-              </div>
-            </details>
-            <details>
-              <summary>
-                <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
-                Reflexión semanal
-              </summary>
-              <div class="detail-body">
-                <p><strong>¿Qué aprendí?</strong> …</p>
-                <p><strong>¿Cómo aprendí?</strong> …</p>
-                <p><strong>¿Qué necesito reforzar?</strong> …</p>
-              </div>
-            </details>
+          <div class="notebook" data-week-content="3" aria-busy="true">
+            <details open><summary><i class="fa-solid fa-book-open" aria-hidden="true"></i> Temas aprendidos</summary><div class="detail-body" data-section="Temas aprendidos"></div></details>
+            <details><summary><i class="fa-solid fa-flask" aria-hidden="true"></i> Ejercicios de laboratorio y resultados</summary><div class="detail-body" data-section="Ejercicios de laboratorio y resultados"></div></details>
+            <details><summary><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Reflexión semanal</summary><div class="detail-body" data-section="Reflexión semanal"></div></details>
+          </div>
+        </div>
+        <div class="tab-panel" id="s4" role="tabpanel" aria-labelledby="tab-s4" hidden>
+          <div class="week-heading">
+            <span class="week-number">04</span>
+            <div><h2>Semana 4</h2><p data-week-topic>Cargando registro…</p></div>
+          </div>
+          <div class="notebook" data-week-content="4" aria-busy="true">
+            <details open><summary><i class="fa-solid fa-book-open" aria-hidden="true"></i> Temas aprendidos</summary><div class="detail-body" data-section="Temas aprendidos"></div></details>
+            <details><summary><i class="fa-solid fa-flask" aria-hidden="true"></i> Ejercicios de laboratorio y resultados</summary><div class="detail-body" data-section="Ejercicios de laboratorio y resultados"></div></details>
+            <details><summary><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Reflexión semanal</summary><div class="detail-body" data-section="Reflexión semanal"></div></details>
+          </div>
+        </div>
+        <div class="tab-panel" id="s5" role="tabpanel" aria-labelledby="tab-s5" hidden>
+          <div class="week-heading">
+            <span class="week-number">05</span>
+            <div><h2>Semana 5</h2><p data-week-topic>Cargando registro…</p></div>
+          </div>
+          <div class="notebook" data-week-content="5" aria-busy="true">
+            <details open><summary><i class="fa-solid fa-book-open" aria-hidden="true"></i> Temas aprendidos</summary><div class="detail-body" data-section="Temas aprendidos"></div></details>
+            <details><summary><i class="fa-solid fa-flask" aria-hidden="true"></i> Ejercicios de laboratorio y resultados</summary><div class="detail-body" data-section="Ejercicios de laboratorio y resultados"></div></details>
+            <details><summary><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Reflexión semanal</summary><div class="detail-body" data-section="Reflexión semanal"></div></details>
+          </div>
+        </div>
+        <div class="tab-panel" id="s6" role="tabpanel" aria-labelledby="tab-s6" hidden>
+          <div class="week-heading">
+            <span class="week-number">06</span>
+            <div><h2>Semana 6</h2><p data-week-topic>Cargando registro…</p></div>
+          </div>
+          <div class="notebook" data-week-content="6" aria-busy="true">
+            <details open><summary><i class="fa-solid fa-book-open" aria-hidden="true"></i> Temas aprendidos</summary><div class="detail-body" data-section="Temas aprendidos"></div></details>
+            <details><summary><i class="fa-solid fa-flask" aria-hidden="true"></i> Ejercicios de laboratorio y resultados</summary><div class="detail-body" data-section="Ejercicios de laboratorio y resultados"></div></details>
+            <details><summary><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Reflexión semanal</summary><div class="detail-body" data-section="Reflexión semanal"></div></details>
           </div>
         </div>
       </section>

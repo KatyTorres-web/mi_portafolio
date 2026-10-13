@@ -103,6 +103,9 @@ code, pre { font-family: ui-monospace, Consolas, monospace; }
 .project-img { min-height: 165px; padding: 20px; display: flex; align-items: center; justify-content: space-between; color: #42365f; }
 .project-img > i { font-size: 3.4rem; }
 .project-img small { align-self: flex-start; font-size: .7rem; letter-spacing: .12em; font-weight: 800; }
+.project-img-photo { position: relative; overflow: hidden; }
+.project-img-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.project-img-photo small { position: relative; z-index: 1; padding: 5px 8px; border-radius: 6px; background: rgba(255, 255, 255, .88); color: #2f2a48; }
 .project-purple { background: linear-gradient(135deg, #e7e0ff, #d4caff); }
 .project-pink { background: linear-gradient(135deg, #ffe0ee, #ffefdf); }
 .project-mint { background: linear-gradient(135deg, #d6f4ed, #e8e1ff); }
