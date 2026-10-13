@@ -7,28 +7,18 @@ const $$ = (selector, parent = document) => [...parent.querySelectorAll(selector
 /* Texto animado de portada */
 const typingEl = $("#typing");
 const roles = ["Ingeniería de Sistemas", "Desarrollo Web", "Transformación Digital"];
-let roleIndex = 0, charIndex = roles[0].length, deleting = false;
-function typeRole() {
-  if (!typingEl || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  const current = roles[roleIndex];
-  typingEl.textContent = current.slice(0, charIndex);
-  if (!deleting && charIndex < current.length) {
-    charIndex++;
-    window.setTimeout(typeRole, 85);
-  } else if (!deleting) {
-    deleting = true;
-    window.setTimeout(typeRole, 1500);
-  } else if (charIndex > 0) {
-    charIndex--;
-    window.setTimeout(typeRole, 42);
-  } else {
-    deleting = false;
-    roleIndex = (roleIndex + 1) % roles.length;
-    window.setTimeout(typeRole, 250);
-  }
-}
-if (typingEl && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  window.setTimeout(typeRole, 1200);
+let roleIndex = 0;
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (typingEl && !reducedMotion) {
+  const changeRole = () => {
+    typingEl.classList.add("changing");
+    window.setTimeout(() => {
+      roleIndex = (roleIndex + 1) % roles.length;
+      typingEl.textContent = roles[roleIndex];
+      typingEl.classList.remove("changing");
+    }, 180);
+  };
+  window.setInterval(changeRole, 3600);
 }
 
 /* Imagen de respaldo cuando todavía no se ha agregado una fotografía */
@@ -153,7 +143,4 @@ if (toTop) {
   window.addEventListener("scroll", () => toTop.classList.toggle("show", window.scrollY > 420), { passive: true });
   toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 }
-const year = $("#year");
-if (year) year.textContent = new Date().getFullYear();
-
 observeReveals();

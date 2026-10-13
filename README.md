@@ -12,6 +12,7 @@ portafolio-katy/
 ├── assets/
 │   ├── css/style.css
 │   ├── js/script.js
+│   ├── js/footer.js
 │   └── img/                 # fotografía y evidencias
 ├── docs/                    # CV u otros documentos que quieras publicar
 ├── vistas/                  # una página HTML por cada opción del menú
@@ -41,9 +42,10 @@ portafolio-katy/
 - **Colores, tamaños y diseño adaptable:** `assets/css/style.css`. Las variables principales están al inicio del archivo.
 - **Iconos:** las vistas usan Font Awesome Free 6.7.2 desde cdnjs; se necesita conexión a Internet para cargarlos.
 - **Animaciones, menú, tema y pestañas:** `assets/js/script.js`.
+- **Pie de página compartido:** `assets/js/footer.js`, incluido en todas las vistas.
 - **Foto:** coloca tu imagen en `assets/img/foto.jpg`.
 - **CV:** coloca el PDF en `docs/CV-Katy.pdf`. Si no vas a publicar un CV, elimina los botones correspondientes.
-- **Proyectos:** sustituye los nombres, descripciones y enlaces `href="#"` por tus proyectos reales.
+- **Proyectos:** edita las tarjetas y repositorios en `vistas/proyectos.html`. El informe `docs/TE.pdf` y el manual `docs/ManualGE.pdf` se enlazan desde sus proyectos correspondientes.
 - **Cuaderno:** actualiza cada semana en la sección `#cuaderno`. Los archivos Markdown de `semanas/` sirven como borradores de apoyo; GitHub Pages no los incorpora automáticamente a la página.
 
 > Importante: no publiques datos personales que no quieras hacer públicos. Todo lo que subas a un repositorio público podrá ser visto por otras personas.

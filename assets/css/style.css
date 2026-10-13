@@ -64,8 +64,10 @@ code, pre { font-family: ui-monospace, Consolas, monospace; }
 .hero h1 .accent { background: var(--grad); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .hero-text > p:not(.eyebrow):not(.edit-note) { max-width: 580px; color: var(--muted); font-size: .94rem; }
 .typing-wrap { min-height: 1.2em; font-size: .78em; }
-.cursor { color: var(--pink); animation: blink 1s steps(1) infinite; }
-@keyframes blink { 50% { opacity: 0; } }
+#typing { display: inline-block; transition: opacity .36s ease-in-out; }
+#typing.changing { opacity: .72; }
+:root[data-theme="dark"] #typing { background: none; color: var(--accent); -webkit-text-fill-color: var(--accent); transition: none; }
+:root[data-theme="dark"] #typing.changing { opacity: 1; }
 .hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin: 25px 0; }
 .socials { display: flex; gap: 10px; margin-top: 18px; }
 .socials a { display: grid; place-items: center; width: 40px; height: 40px; border: 1px solid var(--border); border-radius: 50%; color: var(--accent); font-size: .83rem; font-weight: 800; background: var(--surface); transition: .2s; }
@@ -137,10 +139,6 @@ pre { overflow-x: auto; margin: 12px 0; padding: 16px; border-radius: 14px; back
 .biblio a { color: var(--accent); font-weight: 600; }
 /* Pie y volver arriba */
 .footer { display: flex; align-items: center; justify-content: center; min-height: 44px; margin-top: 24px; padding: 8px 20px; border-top: 1px dashed var(--pink); background: transparent; }
-.footer .footer-mark, .footer h2, .footer p, .footer > .btn { display: none; }
-.footer-mark { display: grid; place-items: center; width: 52px; height: 52px; margin: 0 auto 12px; border-radius: 17px; color: #fff; background: var(--grad); font-size: 1.4rem; font-weight: 800; }
-.footer h2 { font-size: clamp(1.35rem, 3vw, 1.8rem); margin-bottom: 5px; }
-.footer p { color: var(--muted); margin-bottom: 18px; font-size: .9rem; }
 .footer small { display: block; margin-top: 0; color: var(--muted); font-size: .75rem; }
 .to-top { position: fixed; right: 20px; bottom: 20px; z-index: 40; width: 45px; height: 45px; border: 0; border-radius: 50%; color: #fff; background: var(--grad); font-size: 1.25rem; cursor: pointer; box-shadow: var(--shadow); opacity: 0; pointer-events: none; transition: .2s; }
 .to-top.show { opacity: 1; pointer-events: auto; }
