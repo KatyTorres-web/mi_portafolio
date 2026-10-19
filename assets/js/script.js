@@ -441,8 +441,18 @@ tabs.forEach((tab, index) => {
 let revealObserver;
 
 function observeReveals() {
+  const reveals = $$(".reveal");
+
+  if (reducedMotion) {
+    reveals.forEach((el) => {
+      el.classList.add("visible");
+    });
+
+    return;
+  }
+
   if (!("IntersectionObserver" in window)) {
-    $$(".reveal").forEach((el) => {
+    reveals.forEach((el) => {
       el.classList.add("visible");
     });
 
@@ -475,8 +485,9 @@ function observeReveals() {
     });
   });
 
-  $$(".reveal").forEach((el) => {
+  reveals.forEach((el) => {
     if (!el.classList.contains("visible")) {
+      el.classList.add("reveal-pending");
       revealObserver.observe(el);
     }
   });
