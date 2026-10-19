@@ -1,0 +1,9 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@source "../../vistas";
+
+@theme {
+  --breakpoint-tablet: 47.5625rem;
+  --breakpoint-desktop: 63.8125rem;
+}
